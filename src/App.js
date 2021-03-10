@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Datlich from './components/Datlich';
-import Gioithieu from './components/Gioithieu';
-import Cumrap from './components/Cumrap';
-import Tintuc from './components/Tintuc';
-import Ungdung from './components/Ungdung';
+import Scheduling from './components/Scheduling';
+import Introduction from './components/Introduction';
+import Theaters from './components/Theaters';
+import News from './components/News';
+import Apps from './components/Apps';
 import Footer from './components/Footer';
 import './App.css';
 import {
@@ -33,14 +33,14 @@ class App extends Component {
                         <div className="root">
                             <Header />
                             <div className="container" id="home">
-                                <Datlich />
-                                <Gioithieu />
-                                <Cumrap />
-                                <Tintuc />
+                                <Scheduling />
+                                <Introduction />
+                                <Theaters />
+                                <News />
 
                             </div>
                             <div>
-                            <Ungdung />
+                            <Apps />
                             <div className="footer">
                                 <Footer />
 
