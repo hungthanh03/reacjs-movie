@@ -15,7 +15,6 @@ import {
 } from "react-router-dom";
 import Login from './components/Login';
 import Register from './components/Register';
-import './App.css';
 import './reg.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
