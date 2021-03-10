@@ -1,0 +1,249 @@
+.webLogo {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 50px;
+}
+.webLogo:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fb42;
+}
+*/body {
+  width: 1903px;
+  padding: 0px;
+  margin: 0px;
+  font-family: "SF Text Regular";
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: rgb(7, 7, 7);
+  background-color: #fff;
+}
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Text Regular";
+}
+.header {
+  width: 100%;
+  background-color: black;
+  height: 100%;
+}
+.topbar {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  transition: all 0.2s;
+}
+
+#headMenu a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+#headMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-item .lcp {
+  color: #000;
+  font-size: 14px;
+  font-family: "SF Regular";
+}
+.topbar .topbar-center {
+}
+
+.topbar .topbar-right {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#accout {
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid #8d959ceb;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+#idlocal {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  opacity: 0.5;
+  margin-top: 2px;
+  margin-right: 0;
+}
+.avatar {
+  height: auto;
+  width: 30px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+#homeTools {
+  font-family: "SF Text Regular";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: auto;
+  height: 80px;
+  position: absolute;
+  top: 800px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 2;
+  border: 1px solid #ece6e6d1;
+}
+
+.quangcao18 {
+  padding-top: 60px;
+  width: 1903px;
+  height: 878px;
+  background-color: #fff;
+}
+.cangiua {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#homeTools .w30p {
+  width: 30%;
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 1px solid #fff;
+  border-right-color: rgba(238, 238, 238, 0.88);
+}
+#homeTools .widthByPercent {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+#homeTools .smallBlock {
+  width: calc(70% / 4);
+}
+#homeTools .selectMenu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  padding: 7%;
+  /*background-image: url(../img/icons/dropdown-icon.png);*/
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+#homeTools #btnBuy {
+  background-color: #4a4a4a;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  max-height: 300px;
+  overflow-y: scroll;
+  top: 75%;
+}
+.dropdown .dropdown-menu li > a {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dropdown .dropdown-menu li > a {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dropdown-menu > li > a {
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: block;
+}
+
+.test10 {
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.test11 {
+  display: flex;
+  flex-direction: column;
+}
+
+#v-pills-logo3 {
+  color: red;
+}
