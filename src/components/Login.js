@@ -74,7 +74,7 @@ export default class Login extends Component {
     componentDidMount() {
         axios({
             method: 'GET',
-            url: 'http://localhost:5000/accounts',
+            url: 'https://sever-json.herokuapp.com/accounts',
             data: null
         })
             .then(res => {

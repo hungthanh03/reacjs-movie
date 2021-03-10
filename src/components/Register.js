@@ -59,7 +59,7 @@ export default class Register extends Component {
                 break
             }
             else if (this.state.account[this.state.account.length - 1] === ten) {
-                axios.post('http://localhost:5000/accounts', {
+                axios.post('https://sever-json.herokuapp.com/accounts', {
                     usename: usename,
                     password: password,
                     email: email
