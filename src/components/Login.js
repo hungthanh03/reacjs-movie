@@ -82,12 +82,14 @@ export default class Login extends Component {
                 this.setState({
                     accountIs: res.data
                 });
+                console.log(res.data)
 
             }).catch(function (error) {
                 console.log(error);
-            });
-
-    }
+            })
+            
+        }
+    
 
     render() {
         var { accountIs } = this.state;

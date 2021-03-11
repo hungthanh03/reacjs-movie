@@ -64,17 +64,16 @@ export default class Register extends Component {
                     password: password,
                     email: email
                 })
-                    .then(function (response) {
-                        console.log(response.status);
+                    .then(res=> {
+                        this.setState({
+                            done: true
+                        });
+
                     })
                     .catch(function (error) {
                         console.log(error);
                     });
-                this.setState({
-                    done: true
-                }
-
-                )
+                
 
             }
 
@@ -86,7 +85,7 @@ export default class Register extends Component {
     componentDidMount() {
         axios({
             method: 'GET',
-            url: 'http://localhost:5000/accounts',
+            url: 'https://sever-json.herokuapp.com/accounts',
             data: null
         })
             .then(res => {

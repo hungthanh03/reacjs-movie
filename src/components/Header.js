@@ -56,7 +56,7 @@ class Header extends Component {
             </div>
             <div className="topbar-right">
               <div id="accout">
-                <div><img className="avatar" width="16px" height="16px" src="./image/avatar.png" /></div>
+                <div className="avatar-logo"><img className="avatar" width="16px" height="16px" src="./image/avatar.png" /></div>
                 <div >
                   {this.state.loggedIn === false ?
                     <div id="tendangnhap">
@@ -65,9 +65,9 @@ class Header extends Component {
                      
                     </div>
                     :
-                    <div>
-                      <a>Xin Chào {JSON.parse(localStorage.getItem("usename"))} </a>
-                      <button onClick={this.logout}>Đăng xuất</button>
+                    <div id="tendangnhap1" >
+                      <div>Xin Chào {JSON.parse(localStorage.getItem("usename"))} </div>
+                      <button type="button" id="dk" className="btn btn-outline-dark" onClick={this.logout}>Đăng xuất</button>
                     </div>
                   }
                 </div>
